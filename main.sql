@@ -12,7 +12,7 @@ insert into Depot(dep,addr,volume) values('d1','New York',9000);
 insert into Depot(dep,addr,volume) values('d2','Syracuse',6000); 
 insert into Depot(dep,addr,volume) values('d3','New York',2000);
 
-CREATE TABLE Stock( #prod varchar(20) primary key,#dep varchar(20),quantity int not null);
+CREATE TABLE Stock(prod varchar(20),dep varchar(20),quantity int not null);
 /*creates a table with name 'Stock' and adds the first row with titles 'prod' , 'dep' , 'quantity' */
 insert into Stock(prod,dep,quantity) values('p1','d1',1000);
 insert into Stock(prod,dep,quantity) values('p1','d2',-100);
